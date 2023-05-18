@@ -30,12 +30,22 @@ int main()
     //     }
 
     cout << "Print First index Element-> " << d.at(1) << endl;
-    cout << "Print Zero index Element-> " << d.at(0);
+    cout << "Print Zero index Element-> " << d.at(0)<<endl;
 
-    cout<<"front"<<d.front()<<endl;
-    cout<<"Back"<<d.back()<<endl;
+    cout<<"front "<<d.front()<<endl;
+    cout<<"Back "<<d.back()<<endl;
 
-    cout<<"Empty or not"<<d.empty()<<endl;
+    cout<<"Empty or not "<<d.empty()<<endl;
+
+    cout<<"Size before erase "<<d.size()<<endl;
+    d.erase(d.begin(),d.begin()+1);
+    cout<<"Size after erase "<<d.size()<<endl;
+
+    for (int i : d)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
 
     return 0;
 }
